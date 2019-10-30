@@ -39,4 +39,12 @@ public class AppTest
         long result = App.add(a, b);
         junit.framework.Assert.assertEquals(expectedResult, result);
     }
+    
+    public void testSubtract() {
+        int a = 25;
+        int b = 20;
+        int expectedResult = 5;
+        long result = App.sub(a, b);
+        junit.framework.Assert.assertEquals(expectedResult, result);;
+    }
 }

@@ -1,5 +1,6 @@
 package com.assignment.calculator.calculatorApplication;
 
+
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -31,8 +32,11 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
-    {
-        assertTrue( true );
+    public void testAdd() {
+        int a = 15;
+        int b = 20;
+        int expectedResult = 35;
+        long result = App.add(a, b);
+        junit.framework.Assert.assertEquals(expectedResult, result);
     }
 }

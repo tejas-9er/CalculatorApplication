@@ -47,4 +47,12 @@ public class AppTest
         long result = App.sub(a, b);
         junit.framework.Assert.assertEquals(expectedResult, result);;
     }
+    
+    public void testMultiply() {
+        int a = 10;
+        int b = 25;
+        long expectedResult = 250;
+        long result = App.mult(a, b);
+        junit.framework.Assert.assertEquals(expectedResult, result);;
+    }
 }

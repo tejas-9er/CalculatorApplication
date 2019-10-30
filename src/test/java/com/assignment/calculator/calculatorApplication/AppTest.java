@@ -55,4 +55,12 @@ public class AppTest
         long result = App.mult(a, b);
         junit.framework.Assert.assertEquals(expectedResult, result);;
     }
+    
+    public void testDivide() {
+        int a = 56;
+        int b = 10;
+        double expectedResult = 5.6;
+        double result = App.div(a, b);
+        junit.framework.Assert.assertEquals(expectedResult, result,0.00005);
+    }
 }

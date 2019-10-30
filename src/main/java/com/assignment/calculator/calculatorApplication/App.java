@@ -16,7 +16,7 @@ public class App
          int num1,num2;
          num1 = inp.nextInt();
          num2 = inp.nextInt();
-         System.out.println("Enter your selection: 1 for Addition, 2 for substraction 3 for Multiplication and 4 for division:");
+         System.out.println("Enter your selection: 1 for Addition, 2 for substraction 3 for Multiplication, 4 for division and 5 for Modulus:");
          int choose;
          choose = inp.nextInt();
          switch (choose){
@@ -31,6 +31,9 @@ public class App
              break;
          case 4:
              System.out.println(div( num1,num2));
+             break;
+         case 5:
+             System.out.println(mod( num1,num2));
              break;
          default:
              System.out.println("Illegal Operation");
@@ -61,6 +64,15 @@ public class App
          double n = x;
          double d = y;
      	double result = n/d;
+         return result;
+     }
+     
+     public static int mod(int x, int y)
+     {
+         if(y==0) {
+         	throw new IllegalArgumentException("Modulus 0 is invalid");
+         }
+         int result = x/y;
          return result;
      }
     

@@ -63,4 +63,12 @@ public class AppTest
         double result = App.div(a, b);
         junit.framework.Assert.assertEquals(expectedResult, result,0.00005);
     }
+    
+    public void testModulus() {
+        int a = 56;
+        int b = 10;
+        double expectedResult = 5;
+        double result = App.mod(a, b);
+        junit.framework.Assert.assertEquals(expectedResult, result);
+    }
 }
